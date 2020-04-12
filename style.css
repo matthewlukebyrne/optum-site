@@ -1,0 +1,241 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Frutiger-Light";
+    background: #efefee;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+}
+
+.logo {
+    width: 170px;
+    margin-left: 2rem;
+}
+
+
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    background: #fff;
+}
+
+/* Nav Top and Main */
+.top-nav ul {
+    display: flex;
+    background: #282a2e;
+    color: #fff;
+    justify-content: flex-end;
+}
+
+.top-nav ul li {
+    background-color: #ce4b27;
+    padding: 0 2rem;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 2rem;
+    padding: 20px 0px;
+    font-size: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #333;
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 1.5rem;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    padding: 0 1.5rem;
+}
+
+/* On the link lower the hover */
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 1px solid #ce4b27;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 0 1rem;
+    background: #ce4b27;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 300ms linear;
+}
+
+
+/* Needs transition on showcase Button */
+.btn:hover {
+    opacity: #fff;
+    border: 1px solid #ce4b27;
+    color: #ce4b27;
+    background: #fff;
+}
+
+/* Showcase Area */
+.showcase {
+    width: 100%;
+    height: 15rem;
+    background: url('./img/showcase.jpg');
+    justify-content: flex-start;
+    padding: 4rem;
+}
+
+
+/* Spacing on heading */
+.showcase h2 {
+    margin-bottom: 2rem;
+}
+
+/* Spacing on button */
+.showcase .btn {
+    margin-top: 0.5rem;
+}
+
+
+/* Home Card under Showcase */
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: #efefee;
+}
+
+.home-cards img {
+    width: 100%;
+}
+
+.home-cards a {
+    font-size: 1rem;
+    display: inline block;
+    color: #282a2e;
+}
+
+.card-bg {
+    padding: 0.1rem;
+}
+
+/* .home-cards a:hover i {
+    margin-left: 1rem;
+} */
+
+
+
+
+/* News Content */
+.news {
+    background: #262626;
+    color: #fff;
+    height: 3rem;
+    font-size: .75rem;
+    text-align: center;
+}
+
+
+/* Links Area */
+.links {
+    background: #fff;
+    color: #333;
+    font-size: .75rem;
+    letter-spacing: .26;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.links-inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    padding-top: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+/* Line Height on Links */
+.links li {
+    line-height: 2.8;
+}
+
+/* Footer */
+.footer {
+    background: #fff;
+    color: #000;
+    font-size: .75rem;
+}
+
+.footer-inner {
+    max-width: 1400px;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 1000;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer li {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #282a2e;
+    color: #fff
+}
+
+.footer-bottom li a {
+    color: #fff;
+}
