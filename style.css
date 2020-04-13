@@ -3,28 +3,34 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 13px;
+    font-family: 'Montserrat',
+    sans-serif;
+    text-decoration: none;
+
 }
 
-
 body {
-    font-family: "Frutiger-Light";
-    background: #efefee;
-    color: #333;
+    background: #282a2e;
     font-size: 1.2rem;
     line-height: 1.5;
-
 }
 
 .logo {
-    width: 170px;
-    margin-left: 2rem;
+    width: 180px;
+    margin-left: 4rem;
 }
 
 
-a {
-    color: #262626;
-    text-decoration: none;
+.main-menu a {
+    color: #282a2e;
 }
+
+a:visited {
+    color: #282a2e;
+    
+}
+
 
 ul {
     list-style: none;
@@ -40,25 +46,33 @@ ul {
 /* Nav Top and Main */
 .top-nav ul {
     display: flex;
-    background: #282a2e;
+    background: #efefee;
     color: #fff;
     justify-content: flex-end;
 }
 
 .top-nav ul li {
     background-color: #ce4b27;
-    padding: 0 2rem;
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
+    margin-left: .50rem;
+    margin-right: 1rem;
 }
+
+.top-nav ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
 
 .main-nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 2rem;
-    padding: 20px 0px;
+    height: 3rem;
+    padding: 2rem 1rem;
     font-size: 1rem;
     background: #fff;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ce4b27;
 }
 
 .main-nav ul li a {
@@ -67,7 +81,7 @@ ul {
 
 .main-nav ul.main-menu {
     flex: 1;
-    margin-left: 1.5rem;
+    margin-left: 4rem;
 }
 
 .main-nav ul {
@@ -114,16 +128,18 @@ ul {
 /* Showcase Area */
 .showcase {
     width: 100%;
-    height: 15rem;
-    background: url('./img/showcase.jpg');
+    height: 25rem;
+    background: url('./img/showcase.jpg') no-repeat center center/cover;
     justify-content: flex-start;
     padding: 4rem;
+    border-bottom: 1px solid #ce4b27;
 }
 
 
 /* Spacing on heading */
 .showcase h2 {
     margin-bottom: 2rem;
+    color: #efefee;
 }
 
 /* Spacing on button */
@@ -137,8 +153,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.5rem;
-    padding: 1rem 2rem;
-    background: #efefee;
+    padding: 1rem 1rem;
 }
 
 .home-cards img {
@@ -148,11 +163,8 @@ ul {
 .home-cards a {
     font-size: 1rem;
     display: inline block;
-    color: #282a2e;
-}
-
-.card-bg {
-    padding: 0.1rem;
+    color: #1074a7;
+    font-weight: bold;
 }
 
 /* .home-cards a:hover i {
@@ -160,16 +172,80 @@ ul {
 } */
 
 
-
-
 /* News Content */
 .news {
-    background: #262626;
-    color: #fff;
-    height: 3rem;
+    background: #efefee;
+    color: #282a2e;
+    height: 5rem;
     font-size: .75rem;
-    text-align: center;
+    border-top: 1px solid #ce4b27;
+    border-bottom: 1px solid #ce4b27;
+
 }
+
+.content {
+    padding: 2rem;
+    margin-left: 4rem;
+}
+
+.main-grid {
+    padding: 2rem 2rem;
+}
+
+.sub-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    background: #fff;
+    height: 2rem;
+    font-weight: bold;
+}
+
+.head-1:first-child {
+    grid-column: 1 / span 3;
+}
+
+.sub-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    font-size: .75rem;
+    letter-spacing: .26;
+    margin-top: 2rem;
+}
+
+.sub-grid a {
+    color: #1074a7;
+    font-weight: 900;
+}
+
+.sub-grid ul li h3 {
+    font-size: 1.2rem;
+}
+
+
+/* About Us */
+.about-us {
+    background: #efefee;
+    color: #282a2e;
+    height: 7rem;
+    font-size: .75rem;
+    font-weight: bold;
+    border-top: 1px solid #ce4b27;
+    border-bottom: 1px solid #ce4b27;
+
+}
+
+.about {
+    padding: 2rem;
+    margin-left: 4rem;
+}
+
+.about h3 {
+    color: #ce4b27;
+    text-transform: uppercase;
+}
+
 
 
 /* Links Area */
@@ -180,6 +256,11 @@ ul {
     letter-spacing: .26;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
+}
+
+.links h3 {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .links-inner {
@@ -205,6 +286,7 @@ ul {
     background: #fff;
     color: #000;
     font-size: .75rem;
+    line-height: 1em;
 }
 
 .footer-inner {
@@ -213,7 +295,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 1000;
+    font-size: .75em;
+    font-weight: bold;
 }
 
 .footer ul {
@@ -227,15 +310,24 @@ ul {
 }
 
 .footer-bottom {
-    max-width: 1400px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: #282a2e;
-    color: #fff
+    background: #efefee;
+    border-top: 1px solid #ce4b27;
 }
 
-.footer-bottom li a {
-    color: #fff;
+.footer-bottom ul li {
+    margin-left: 4rem;
+    margin-top: 1rem;
 }
+
+@font-face {
+    font-family: 'FrutigerLTW01-45Light';
+    src: url('FrutigerLTW01-45Light.woff2') format('woff2'),
+        url('FrutigerLTW01-45Light.woff') format('woff'),
+        url('FrutigerLTW01-45Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
