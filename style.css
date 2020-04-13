@@ -7,13 +7,11 @@
     font-family: 'Montserrat',
     sans-serif;
     text-decoration: none;
-
 }
 
 body {
-    background: #282a2e;
-    font-size: 1.2rem;
-    line-height: 1.5;
+    background: #efefee;
+
 }
 
 .logo {
@@ -24,16 +22,17 @@ body {
 
 .main-menu a {
     color: #282a2e;
-}
-
-a:visited {
-    color: #282a2e;
-    
+    text-decoration: none;
 }
 
 
 ul {
     list-style: none;
+}
+
+a,
+a:visited {
+    color: inherit;
 }
 
 .container {
@@ -46,23 +45,16 @@ ul {
 /* Nav Top and Main */
 .top-nav ul {
     display: flex;
-    background: #efefee;
+    background: #282a2e;
     color: #fff;
     justify-content: flex-end;
 }
 
 .top-nav ul li {
     background-color: #ce4b27;
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 2rem;
     font-weight: bold;
-    margin-left: .50rem;
-    margin-right: 1rem;
 }
-
-.top-nav ul li a:hover {
-    border-bottom: 1px solid #fff;
-}
-
 
 .main-nav {
     display: flex;
@@ -128,8 +120,8 @@ ul {
 /* Showcase Area */
 .showcase {
     width: 100%;
-    height: 25rem;
-    background: url('./img/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    background: url('./img/showcase.png') no-repeat center center/cover;
     justify-content: flex-start;
     padding: 4rem;
     border-bottom: 1px solid #ce4b27;
@@ -313,7 +305,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: #efefee;
+    background: #282a2e;
+    color: #fff;
     border-top: 1px solid #ce4b27;
 }
 
