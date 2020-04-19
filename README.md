@@ -1,2 +1,3 @@
 "# optum-site" 
-![Sass-Folio](demo/sass-folio.gif)
+
+![Sass-Folio](optumui.png)
